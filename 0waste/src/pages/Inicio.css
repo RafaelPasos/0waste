@@ -1,0 +1,104 @@
+.marginDiv
+{
+    margin-top: 5%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    display: flex;
+    flex-direction: column;
+}
+.InicioTitle
+{
+    font-size: 28pt;
+    font-family: 'Abril Fatface', cursive;
+    color: rgb(29, 29, 29);
+}
+.login-toolbar
+{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.InicioSubTitle
+{
+    font-size: 22pt;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(29, 29, 29);
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.infoResumeDiv
+{
+    color: rgb(29, 29, 29);
+    font-size: 14pt;
+}
+.sadsad
+{
+    --border-style: none;
+    --padding-top: 0px !important;
+    --padding-start: 0px !important;
+    --padding-right: 0px !important;
+    --padding-end: 0px !important;
+}
+.alertBubbleDiv
+{
+    width: 40px;
+    height: 40px;
+}
+.cardItemDiv
+{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    line-height: 30pt;
+    color: rgb(0, 0, 0);
+    font-size: 15pt;
+    justify-content: space-between;
+}
+.productName
+{
+    color: rgb(0, 0, 0);
+    font-size: 15pt;
+    line-height: 30pt;
+}
+.productExpDate
+{
+    color: rgb(105, 105, 105);
+    font-size: 13pt;
+    line-height: 31pt;
+}
+.noborder
+{
+    --border-style:none;       
+    --border-style: none;
+    --padding-top: 0px !important;
+    --padding-start: 0px !important;
+    --padding-right: 0px !important;
+    --padding-end: 0px !important;
+    box-shadow: none; 
+}
+
+.tollbarcustomDiv
+{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    line-height: 50px;
+}
+.logodiv
+{
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+}
+ion-card{
+    --border-radius: 30px;
+    border-radius: 25px;
+    box-shadow: 0px 1px 6px 0.2px rgb(184, 184, 184);
+}

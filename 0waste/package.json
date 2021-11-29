@@ -19,9 +19,14 @@
     "@types/react-dom": "^16.9.10",
     "@types/react-router": "^5.1.11",
     "@types/react-router-dom": "^5.1.7",
+    "axios": "^0.24.0",
     "ionicons": "^5.4.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "lottie-react": "^2.1.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.14.0",
+    "react-daypicker": "^3.0.10",
+    "react-dom": "^16.14.0",
+    "react-lottie": "^1.2.3",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
@@ -65,7 +70,8 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "3.2.5"
+    "@capacitor/cli": "3.2.5",
+    "@types/react-lottie": "^1.2.6"
   },
   "description": "An Ionic project"
 }

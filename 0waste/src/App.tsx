@@ -17,6 +17,9 @@ import AppContent from './pages/AppContent'
 import Login from './pages/Login'
 import Register from './pages/Register'
 
+import AuthProvider from './context/AuthProvider'
+import context from './context/AuthProvider'
+
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -40,15 +43,29 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-            <Route exact path="/">
-              <AppContent></AppContent>
-            </Route>
-            <Route exact path="/login">
-              <Login></Login>
-            </Route>
-            <Route exact path="/register">
-              <Register></Register>
-            </Route>
+            <AuthProvider source={""}>
+              <Route exact path="/">
+                <AppContent></AppContent>
+              </Route>
+              <Route exact path="/Alertas">
+                <AppContent></AppContent>
+              </Route>
+              <Route exact path="/Inicio">
+                <AppContent></AppContent>
+              </Route>
+              <Route exact path="/Productos">
+                <AppContent></AppContent>
+              </Route>
+              <Route exact path="/Perfil">
+                <AppContent></AppContent>
+              </Route>
+              <Route exact path="/login">
+                <Login></Login>
+              </Route>
+              <Route exact path="/register">
+                <Register></Register>
+              </Route>
+            </AuthProvider>
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

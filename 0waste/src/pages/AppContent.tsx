@@ -7,14 +7,17 @@ import {
   IonTabBar,
   IonTabButton,
   IonTabs,
+  
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { alertCircleOutline, addCircleOutline, homeOutline, person} from 'ionicons/icons';
+import { alertCircle, addCircle, home, person} from 'ionicons/icons';
 import Inicio from './Inicio';
 import Alertas from './Alertas';
 import Productos from './Productos';
 import Perfil from './Perfil';
+import React, { useState } from 'react';
 
+import { IonModal, IonButton, IonContent } from '@ionic/react';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -34,10 +37,18 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 
 
-const AppContent: React.FC = () => (
+import logo from '../assets/img/logo.png'
+export const AppContent: React.FC = () => {
+    const [showModal, setShowModal] = useState(false);
+    const handleTabWillChange = (e: { detail: { tab: string; }; }) => {
+      if (e.detail.tab === 'Perf il') {
+        setShowModal(true)
+      }
+    };
+    return (
     <>
     <IonReactRouter>
-      <IonTabs>
+      <IonTabs onIonTabsWillChange={handleTabWillChange}>  
         <IonRouterOutlet>
           <Route exact path="/Inicio">
             <Inicio />
@@ -57,25 +68,58 @@ const AppContent: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="Inicio" href="/Inicio">
-            <IonIcon icon={homeOutline} />
+            <IonIcon icon={home} />
             <IonLabel>Inicio</IonLabel>
           </IonTabButton>
           <IonTabButton tab="Alertas" href="/Alertas">
-            <IonIcon icon={alertCircleOutline} />
+            <IonIcon icon={alertCircle} />
             <IonLabel>Alertas</IonLabel>
           </IonTabButton>
           <IonTabButton tab="Productos" href="/Productos">
-            <IonIcon icon={addCircleOutline} />
+            <IonIcon icon={addCircle} />
             <IonLabel>Productos</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="Perfil" href="/Perfil">
-            <IonIcon icon={person} />
+          <IonTabButton tab="Perfil" href="/Perfil"
+                                                //setShowModal(true)v>
+                                        >
+            <IonIcon icon={person}/>
             <IonLabel>Perfil</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>
     </>
-);
+    );
+};
 
 export default AppContent;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

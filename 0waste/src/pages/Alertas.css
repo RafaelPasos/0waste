@@ -1,0 +1,61 @@
+.alertlottieDiv
+{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5%;
+}
+.InicioSubTitleNoMargin
+{
+    font-size: 22pt;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(29, 29, 29);
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+.my-custom-class
+{
+    width: 80%;
+    height: 80%;
+    margin-top: auto;
+    padding: 5px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(182, 182, 182);
+    box-shadow: 0px 0px 10px rgb(165, 165, 165);
+    color: black;
+}
+.lblmodal
+{
+    color: rgb(0, 0, 0);
+    font-size: 15pt;
+    line-height: 30pt;
+    margin-left: 10px;
+}
+.react-daypicker-root
+{
+margin: auto;
+}
+.headerModal
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.iconModalClose
+{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.btnNewAlarm
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5%;
+}

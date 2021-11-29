@@ -1,0 +1,13 @@
+.cardItemProdDiv
+{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    line-height: 30pt;
+    color: rgb(0, 0, 0);
+    font-size: 15pt;
+}
+.productName
+{
+    margin-left: 25px;
+}
